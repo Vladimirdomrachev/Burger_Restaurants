@@ -1,0 +1,811 @@
+/* Global specification */
+
+body {
+	font-family: "Open Sans", sans-serif;
+  color: #71706c;	
+  line-height: 1.5;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Global templates */
+
+.visually-hidden {
+	position: absolute;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+/* Button basket */
+
+.btn-basket {
+  position: relative;
+  border: none;
+  border-radius: 26px;
+  color: #ffff;  
+  background-color: #ffa200;
+  box-shadow: 0 4px 16px rgba(255, 174, 0, 0.4);
+  font-size: 14px;
+  font-weight: 700;   
+  letter-spacing: -0.15px;  
+  padding: 14px 20px 14px 55px;  
+}
+
+.btn-basket::before {
+  position: absolute;
+  top: 33%;
+  left: 20px;
+  width: 30px;
+  height: 25px;
+  content: "";  
+  background-image: url(../img/scooter_icon.svg);
+  background-repeat: no-repeat;
+}
+
+.btn-basket:hover {
+  background-color: #ffa200;
+  color: #fff;
+  box-shadow: 0px 4px 16px #d19f62;
+}
+
+.btn-basket:active,
+.btn-basket:focus {  
+  background-color: #ffa200;
+  box-shadow: inset 0px 0px 5px #e27f2d;
+}
+
+/* Button add to card */
+
+.btn-add-to-cart {
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.14px;
+  color: #fff;
+  background-color: #ffa200;
+  box-shadow: 0 4px 16px rgba(255, 174, 0, 0.4);
+  padding: 10px 30px;
+}
+
+.btn-add-to-cart:hover {
+  background-color: #ffa200;
+  color: #fff;
+  box-shadow: 0px 4px 16px #d19f62;
+}
+
+.btn-add-to-cart:active,
+.btn-add-to-cart:focus {  
+  background-color: #ffa200;
+  box-shadow: inset 0px 0px 5px #e27f2d;
+}
+
+.btn-add-to-cart {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.card:hover .btn-add-to-cart {
+  opacity: 1;
+}
+
+/* Btn load more */
+
+.btn-load-more {
+  position: relative;
+  border-radius: 30px;
+  color: #ffff;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 10px;  
+  letter-spacing: -0.15px;
+  background-color: #ffa200;
+  box-shadow: 0 4px 16px rgba(255, 174, 0, 0.4);
+  padding: 25px 50px 25px 80px;
+}
+
+.btn-load-more::before {
+  position: absolute;
+  top: 21px;
+  left: 53px;
+  width: 20px;
+  height: 20px;
+  content: "";  
+  background-image: url(../img/load_icon.svg);
+  background-repeat: no-repeat;
+}
+
+.btn-load-more:hover {
+  background-color: #ffa200;
+  color: #fff;
+  box-shadow: 0px 4px 16px #d19f62;
+}
+
+.btn-load-more:active,
+.btn-load-more:focus {  
+  background-color: #ffa200;
+  box-shadow: inset 0px 0px 5px #e27f2d;
+}
+
+/* Button order now */
+
+.btn-order-now {
+  background-color: #c10a28;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;  
+  line-height: 10px;  
+  letter-spacing: -0.15px;
+  padding: 20px 65px;
+}
+
+.btn-order-now:hover {
+  background-color: #c10a28;
+  color: #fff;
+  box-shadow: 0px 4px 16px #8a1327;
+}
+
+.btn-order-now:active,
+.btn-order-now:focus {  
+  background-color: #c10a28;
+  box-shadow: inset 0px 0px 10px #8a1327;  
+}
+
+/* Btn sing up */
+
+.btn-sing-up {
+  background-color: #cf0810;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 10px;  
+  letter-spacing: -0.16px;
+  padding: 18px 60px;
+  border-radius: 30px;
+}
+
+.btn-sing-up:hover {
+  background-color: #c10a28;
+  color: #fff;
+  box-shadow: 0px 4px 16px #8a1327;
+}
+
+.btn-sing-up:active,
+.btn-sing-up:focus {  
+  background-color: #c10a28;
+  box-shadow: inset 0px 0px 10px #8a1327;  
+}
+
+/* Heading and subtitle */
+
+.section__title {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 50px;
+  font-weight: 700;  
+  color: #212121;  
+}
+
+.section__title_font {
+  font-family: "Chiller", sans-serif;
+  font-weight: 400;
+}
+
+.section__subtitle {
+  color: #484848;
+  font-family: "Dancing Script", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 34px;  
+  letter-spacing: -0.26px;
+  padding-bottom: 60px;
+}
+
+/* Price */
+
+.price {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  color: #ffffff;
+  font-family: "Myanmar Text", sans-serif;
+  font-size: 24px;
+  font-weight: bold;  
+  text-transform: uppercase;  
+  letter-spacing: -0.08px;
+  border-radius: 50%;
+  padding: 30px 18px 10px 18px;
+}
+
+.price::before {
+  position: absolute;
+  top: 10px;
+  left: 35px;
+  content: "\0024";
+  width: 20px;
+  height: 20px;
+  font-family: 'Brush Script Std', sans-serif;  
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.price-color_red {
+  background-color: #c10a28;
+}
+
+.price-color_yellow {
+  background-color: #fdbc3e;
+}
+
+/* SECTION */
+
+/* MAIN HEADER */
+
+.main-header {
+  background-color: #fdbc3e;
+   
+}
+
+.border_borom {  
+  border-bottom: 1px solid rgba(255, 255, 255, 0.17);
+}
+
+.logo-img-wrapper {
+  
+  width: 66px;
+  height: 93px;
+}
+
+.logo:hover {
+  cursor: pointer;
+} 
+
+.logo__text {    
+  color: #ffffff;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 66px;
+  font-weight: 700;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+.logo__text_font {
+  font-family: "Chiller", sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+}
+
+/* Navigation */
+
+/* Navigation Desktop */
+
+.header-wrapper-navigarion-list {
+  padding-top: 45px;
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: -0.15px;    
+}
+
+.navigation__link:hover {
+  text-decoration: none;  
+  color: #c10a28;
+}
+
+.navigation__link:active {  
+  opacity: 0.8; 
+}
+
+.header-wrapper-basket {
+  padding-top: 35px;
+}
+
+/* mobile menu*/
+
+.burger-menu {
+	position: relative;
+	padding-left: 50px;
+	width: 60px;
+	height: 100px;
+}
+
+.burger-menu__line {
+	position: absolute;
+	top: 40px;
+	left: 45px;
+	width: 50px;
+	border-bottom: 7px solid #c10a28;	
+	transition: all 0.5s;	
+}
+
+.burger-menu__line:nth-of-type(2) {
+	top: 58px;
+}
+
+.burger-menu__line:nth-of-type(3) {
+	top: 75px;
+}
+
+.burger-menu:hover .burger-menu__line:nth-of-type(1) {
+	transform: rotate(-45deg) translate(-9px, 15px);		
+}
+
+.burger-menu:hover .burger-menu__line:nth-of-type(2) {
+	opacity: 0;
+}
+
+.burger-menu:hover .burger-menu__line:nth-of-type(3) {
+	transform: rotate(45deg) translate(-8px, -15px);
+}
+
+.burger-menu__list {
+	margin-left: 20px;
+}
+
+.burger-menu__list {	
+	display: none;
+	transition: all 0.5s;
+}
+
+.burger-menu:hover .burger-menu__list {
+	display: inline-block;
+}
+
+.burger-menu:active .burger-menu__list {
+	display: inline-block;
+}
+
+.burger-menu__link {
+	font-size: 20px;
+	font-weight: 600;
+	color: white;
+	text-decoration: none;
+}
+
+.burger-menu__link:hover {
+	text-decoration: none;
+	color: #c10a28;
+}
+
+/* ALL PROMO */
+
+.all-promo {
+  padding-top: 60px;
+  padding-bottom: 95px;
+}
+
+.promo-card {
+  position: relative;
+  font-family: "Yanone Kaffeesatz", sans-serif;  
+  height: 210px;
+  padding: 25px;  
+  color: #fff;
+  background-color: #dbd9d4;  
+  margin-bottom: 22px; 
+  transition: box-shadow 0.3s ease-in-out;  
+}
+
+.promo-card:hover {
+  box-shadow: 0 0 15px 0px #59595c;
+}
+
+.promo-card_1 {
+  background-image: url(../img/promo/bg-promo-card-photo-1.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.promo-card_2 {
+  background-color: #fdbc3e; 
+  background-image: url(../img/promo/icon-bottle.png);
+  background-repeat: no-repeat;
+  background-position: 20px 20px;
+}
+
+.promo-card_3 {
+  background-image: url(../img/promo/bg-promo-card-photo-2.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  filter: brightness(85%);
+}
+
+.promo-card_4 {
+  background-image: url(../img/promo/bg-promo-card-photo-3.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.promo-card_5 {  
+  background-image: url(../img/promo/bg-promo-card-photo-4.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;    
+}
+
+.promo-card_6 {
+  background-color: #c10a28;
+  background-image: url(../img/promo/order-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 30px 30px;  
+}
+
+.promo-card-content-wrapper-2 {
+  width: 110px;
+  margin-left: 100px;
+}
+
+.promo-card-content-wrapper-3 {    
+  padding-top: 140px;
+}
+
+.promo-card-content-wrapper-6 {
+  width: 90px;
+  padding-top: 45px;
+  padding-left: 127px;
+}
+
+.promo-card__text_type-1 {  
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 67px;
+  text-transform: uppercase;
+  letter-spacing: -0.8px;
+  text-shadow: -2px 4px 21px rgba(210, 198, 185, 0.76);
+}
+
+.promo-card__text_type-2 {
+  text-transform: uppercase;  
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 50px;
+  letter-spacing: -0.75px;     
+}
+
+.promo-card__text_type-2 > .font-size {
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.promo-card__text_type-3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;  
+  letter-spacing: -0.3px;
+}
+
+.promo-card__text_type-3 > .font-family {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+.promo-card__text_type-3 > .font-size {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.promo-card__text_type-4 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 50px;  
+  letter-spacing: -0.75px;
+}
+
+.promo-card__text_type-4 > .font-size {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.promo-card__text_type-4 > .font-color {
+  color: #fdbc3e;
+}
+
+.promo-card_1::before {
+  position: absolute;
+  top: 99px;
+  left: 0;
+  content: "";
+  width: 217px;
+  height: 27px;
+  background-color: #fdbc3e; 
+  z-index: 50; 
+}
+
+.promo-card_4::before {
+  position: absolute;
+  top: 99px;
+  left: 0;
+  content: "";
+  width: 217px;
+  height: 27px;
+  background-color: #c10a28; 
+  z-index: 50; 
+}
+
+.promo-card__timer {
+  position: relative;
+  color: #212121;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;  
+  line-height: 42px;
+  z-index: 100;
+}
+
+/* BEST PROMO */
+
+.best-promo {
+  background-color: #2a2a2a; 
+  padding-top: 120px;
+  padding-bottom: 60px;
+  background-image: 
+    url(../img/bg-patert-decor-kitchen.png),
+    url(../img/bg-patert-space.png);  
+  background-repeat: repeat;
+}
+
+.best-promo__price {
+  color: #fdbc3e;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 200px;
+  line-height: 186px;
+  font-weight: 700;  
+  letter-spacing: -1.35px;
+}
+
+.best-promo__title {
+  color: #ffffff;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 85px;
+  font-weight: 700;
+  line-height: 79.64px;
+  text-transform: uppercase;  
+  letter-spacing: 0.58px;
+}
+
+.best-promo__description_1 {
+  color: #ffffff;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30.3px;  
+  letter-spacing: 0.42px;
+}
+
+.best-promo__description_2 {
+  position: absolute;
+  top: 141px;
+  left: 306px;
+  color: #fdbc3e;
+  font-family: "Dancing Script", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 11.17px;  
+  letter-spacing: 0.81px;
+  transform: rotate(-10deg);
+}
+
+.best-promo__description_2::before {
+  position: absolute;
+  top: 18px;
+  left: 56px;
+  content: "";
+  width: 130px;
+  height: 50px;
+  background-image: url(../img/decor-border.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  transform: rotate(10deg);
+}
+
+/* TODAY CATALOG */
+
+.today-catalog {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* FEATURES */
+
+.features {
+  background-color: #000;
+  background-image: url(../img/bg-feature.png);    
+  background-repeat: no-repeat;
+}
+
+.features__item {
+  position: relative;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21px;
+  letter-spacing: -0.18px;
+  padding-top: 170px;
+  padding-bottom: 56px;
+}
+
+.features__item::before {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  content: "";
+  width: 120px;
+  height: 90px;
+  background-image: url(../img/features-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.features__item:nth-child(2)::before  {
+  left: -25px;
+  background-position: -184px 0;
+}
+
+.features__item:nth-child(3)::before  {
+  left: -25px;
+  background-position: -350px 0;
+}
+
+.features__item:nth-child(4)::before  {
+  left: -15px;
+  background-position: -514px 0;
+}
+
+/* CATALOG */
+
+.catalog {
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+
+.btn-catalog-filter {  
+  color: #9b959b;  
+  font-size: 21px;  
+  line-height: 34px;  
+  letter-spacing: -0.21px;
+  border: none;
+  background-color: transparent;  
+}
+
+.card {
+  margin-bottom: 50px;
+  transition: box-shadow 0.3s ease-in-out; 
+}
+
+.card:hover {
+  box-shadow: 0 0 15px 0px #59595c;
+}
+
+.card-title {
+  color: #2d2b2d;
+  font-size: 22px;  
+  line-height: 27px;
+  letter-spacing: -0.29px;
+}
+
+.card-text {
+  color: #71706c;
+  font-size: 14px;  
+  line-height: 24px;
+  padding-bottom: 10px;
+}
+
+
+/*MAIN FOOTER */
+
+.main-footer {  
+  background-color: #2c2c2c;
+}
+
+/* Footer logo */
+
+.main-footer .logo-img-wrapper {
+  margin-left: 88px;
+}
+
+/* Footer  subscription */
+
+.subscription {
+  background-color: #2c2c2c;
+}
+
+.subscription__form {
+  position: relative;
+  width: 100%;  
+}
+
+.form__fild {
+  width: 100%;
+  padding: 20px 40px;
+  border-radius: 30px;
+  border: none;
+}
+
+.form__fild:focus {  
+  outline: none;  
+}
+
+.btn-sing-up {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Contacts */
+
+.contacts {
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+
+.contacts__item {
+  display: inline-block;
+  padding: 0 10px;
+  border-right: 2px solid #614d21;
+  color: #dddddd;  
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;  
+}
+
+.contacts__link {
+  color: inherit;
+  font-size: inherit;
+}
+
+.contacts__link:hover {
+  text-decoration: none;  
+  color: #c10a28;
+}
+
+.address {
+  margin: 0;
+}
+
+/* Copyright */
+
+.my-col {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.copyright {
+  opacity: 0.8;
+  color: #7f7f7f;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 21px;
+  background-color: #1f1f1f;
+  padding: 18px 0;
+}
+
+
+
+

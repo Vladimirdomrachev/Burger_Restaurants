@@ -1,0 +1,211 @@
+body {
+	padding: 0;
+	margin: 0;	
+}
+
+.slider {
+	background-color: #fdbc3e;
+}
+
+#slider-wrap {			
+	width: 100%;
+	padding-top: 50px; 
+	padding-bottom: 50px;	
+}
+
+#slider {
+	width: 100%;	
+	height: 80vh;	
+	overflow: hidden;  	
+	position:relative;
+	background-image: url("../img/slider/slider-bg.png");	
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: contain;
+}
+
+#slider img {	
+	width: 100%;		
+}
+
+.slide{ 	
+	width:100%;	
+	height:100%;	
+}
+
+.sli-links {
+	position: absolute;
+	top: 40%;
+	left: -190px; 	
+	text-align: center;
+	transform: rotate(90deg);
+	box-shadow: -2px 4px 13px rgba(255, 204, 0, 0.3);
+	background-color: #c10a28;
+}
+
+.sli-links .control-slide {	
+	position: relative;	
+	margin: 15px;	
+	display: inline-block;
+	width: 40px;	
+	height: 40px;	
+	overflow: visible;	
+	text-indent: -9999px;
+	transform: rotate(-90deg);
+	background-image: url(../img/slider/slider-set-icon.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;	
+}
+
+.sli-links .control-slide:nth-child(2) {	
+	background-position: 0 -92px;
+}	
+
+.sli-links .control-slide:nth-child(3) {
+	background-position: 0 -187px;
+}
+
+
+.sli-links .control-slide:nth-child(4) {
+	background-position: 0 -282px;
+}	
+
+.sli-links .control-slide:nth-child(5) {
+	background-position: 0 -375px;
+}	
+
+.sli-links .control-slide:nth-child(6) {
+	background-position: 0 -564px;
+}	
+
+.sli-links .control-slide::after {	
+	position: absolute;
+	top: 4px;
+	right: -120px;
+	content: "Pizza";
+	width: 100px;	
+	color: #212121;
+	font-family: "Open Sans";
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 34px;
+	text-indent: 0;
+	text-align: left;
+}	
+
+.sli-links .control-slide:nth-child(2)::after {
+	content: "Burgers";
+}
+
+.sli-links .control-slide:nth-child(3)::after {
+	content: "Salads";
+}
+
+.sli-links .control-slide:nth-child(4)::after {
+	content: "Tacos";
+}
+
+.sli-links .control-slide:nth-child(5)::after {
+	content: "Wraps";
+}
+
+.sli-links .control-slide:nth-child(6)::after {
+	content: "Drinks";
+}
+
+.sli-links .control-slide:hover,
+.sli-links .control-slide.active {	
+	cursor:pointer;	
+	background-image: url("../img/slider/slider-set-icon-white.png");
+}
+
+.sli-links .control-slide:hover::after,
+.sli-links .control-slide.active::after {	
+	color: white;
+}
+
+#prewbutton, #nextbutton {
+	display: none;	
+	width:15px;	
+	height:100%;	
+	position:absolute;	
+	top:0;	
+	overflow:hidden;	
+	text-indent:-999px;	
+	opacity:0.8;	
+	z-index:3;	
+	outline:none !important;
+	background:url(../img/arrowBg.png) left center no-repeat;	
+}
+
+#prewbutton {
+	left:10px;
+}
+#nextbutton {	
+	right:10px;
+	background:url(../img/arrowBg.png) right center no-repeat;
+}
+
+#prewbutton:hover, #nextbutton:hover {	
+	opacity:1;
+}
+
+
+.slider-order {
+	position: absolute;
+	top: 40%;
+	right: -78px;
+	transform: rotate(90deg);
+}
+
+.slider-order__phone-link {
+	display: inline-block;	
+	font-family: "Open Sans", sans-serif;
+	color: #fff;
+	font-size: 29px;
+	font-weight: 600;
+	line-height: 34px;
+	letter-spacing: -0.29px;
+	box-shadow: -2px 4px 13px rgba(255, 204, 0, 0.3);
+	border-radius: 0 0 10px 10px;
+	background-color: #c10a28;
+	padding: 15px;	
+}
+
+.slider-order__phone-link:hover {
+	text-decoration: none;
+	color: #fff;	
+	box-shadow: 0 0 3px #000;
+}
+
+.slider-order__phone-link:active {
+	text-decoration: none;
+	color: #fff;	
+	box-shadow: inset 0 0 3px #000;
+}
+
+.slider-order__city {
+	font-family: "Open Sans";
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 34px;	
+	letter-spacing: -0.36px;
+	color: #000;
+	padding-left: 30px;	
+}
+
+.slider-order__city .city__select {
+	color: #fff;
+}
+
+
+.slide-text-wrap {
+	text-align: center;
+	padding-top: 20%;
+}
+
+.slide__text {
+	font-family: "Yanone Kaffeesatz";
+	color: #ffffff;
+	text-transform: uppercase;
+}

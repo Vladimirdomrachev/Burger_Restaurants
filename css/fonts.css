@@ -1,0 +1,118 @@
+/* Open Sans */
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/open-sans/OpenSans-Light.woff2') format('woff2'),
+			url('../fonts/open-sans/OpenSans-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/open-sans/OpenSans-Regular.woff2') format('woff2'),
+			url('../fonts/open-sans/OpenSans-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/open-sans/OpenSans-SemiBold.woff2') format('woff2'),
+			url('../fonts/open-sans/OpenSans-SemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/open-sans/OpenSans-Bold.woff2') format('woff2'),
+			url('../fonts/open-sans/OpenSans-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/open-sans/OpenSans-ExtraBold.woff2') format('woff2'),
+			url('../fonts/open-sans/OpenSans-ExtraBold.woff') format('woff');
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/open-sans/OpenSans-Italic.woff2') format('woff2'),
+			url('../fonts/open-sans/OpenSans-Italic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+/* Dancing Script */
+
+@font-face {
+	font-family: 'Dancing Script';
+	src: url('../fonts/dancing-script/DancingScript-Regular.woff2') format('woff2'),
+			url('../fonts/dancing-script/DancingScript-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Dancing Script';
+	src: url('../fonts/dancing-script/DancingScript-Bold.woff2') format('woff2'),
+			url('../fonts/dancing-script/DancingScript-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Yanone Kaffeesatz */
+
+@font-face {
+	font-family: 'Yanone Kaffeesatz';
+	src: url('../fonts/yanone-kaffeesatz/YanoneKaffeesatz-Bold.woff2') format('woff2'),
+			url('../fonts/yanone-kaffeesatz/YanoneKaffeesatz-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Yanone Kaffeesatz';
+	src: url('../fonts/yanone-kaffeesatz/YanoneKaffeesatz-Light.woff2') format('woff2'),
+			url('../fonts/yanone-kaffeesatz/YanoneKaffeesatz-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Chiller */
+
+@font-face {
+	font-family: 'Chiller';
+	src: url('../fonts/chiller/Chiller-Regular.woff2') format('woff2'),
+			url('../fonts/chiller/Chiller-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+/* Brush Script Std */
+
+@font-face {
+	font-family: 'Brush Script Std';
+	src: url('../fonts/BrushScript/BrushScriptStd.woff2') format('woff2'),
+			url('../fonts/BrushScript/BrushScriptStd.woff') format('woff');
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
+}
+
